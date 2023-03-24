@@ -1,0 +1,33 @@
+body{
+    background-color: rgb(39, 73, 122);
+}
+.container{
+    background-color: rgb(74, 99, 140);
+    border:3px solid white;
+    border-radius: 8px;
+    margin: 0px;
+    padding: 8px;
+    width: 800px;
+    position: absolute;
+    top:100px;
+    left:400px
+}
+
+.heading-container{
+    border:3px solid white;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 30px;
+    color: aliceblue;
+}
+.heading-container>h6{
+    margin: 15px;
+}
+.item-container{
+    border:3px solid white;
+    border-radius: 8px;
+    text-align: center;
+    margin: 10px;
+    color: aliceblue;
+}
+
