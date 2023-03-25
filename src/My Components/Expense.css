@@ -1,8 +1,8 @@
 body {
-  background-color: #feaed4;
+  background-color: #ffffff;
 }
 .heading-container {
-    background-color: #f47c7c;
+    background-color: #666262;
     text-align: center;
   /* font-size: 30px; */
     color: aliceblue;
@@ -12,7 +12,7 @@ body {
 }
 .expenseIem-container {
   display: flex;
-  background-color: #394043;
+  background-color: #396679;
   justify-content: space-between;
   border: 3px solid white;
   border-radius: 8px;
@@ -25,6 +25,10 @@ body {
   padding: 10px;
   font-weight: bold;
   font-size: 20px;
+  color: #000000;
+  border: 2px solid white;
+  border-radius: 8px;
+  background-color: #8feed4;
 
 }
 .expense {
@@ -46,5 +50,5 @@ body {
   font-size: 20px;
   border: 2px solid white;
   border-radius: 8px;
-  background-color: #495cd7;
+  background-color: #ea7070;
 }
