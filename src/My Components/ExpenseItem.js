@@ -1,33 +1,10 @@
-function ExpenseItem() {
-  const expenseDate = new Date(2023, 3, 24);
-  const expenseTitle = "Food";
-  const expenseAmt = 250;
-  const expenseLocation = "Amravati";
+function ExpenseItem(props) {
   return (
-    <div className="container">
-      <div className="heading-container">
-        <h6>Monthly Expense</h6>
-      </div>
-      <div className="item-container">
-        <ol>
-          <li>
-            {expenseDate.toISOString()} - {expenseTitle} - {expenseAmt}-
-            {expenseLocation}
-          </li>
-          <li>
-            {expenseDate.toISOString()} - {expenseTitle} - {expenseAmt}-
-            {expenseLocation}
-          </li>
-          <li>
-            {expenseDate.toISOString()} - {expenseTitle} - {expenseAmt}-
-            {expenseLocation}
-          </li>
-          <li>
-            {expenseDate.toISOString()} - {expenseTitle} - {expenseAmt}-
-            {expenseLocation}
-          </li>
-        </ol>
-      </div>
+      <div className="expenseIem-container">
+        <div className="date">{props.no}) {props.date.toDateString()}</div>
+        <div className="expense">{props.title}</div>
+        <div className="location">{props.location}</div>
+        <div className="amount">{props.amount}</div>
     </div>
   );
 }
