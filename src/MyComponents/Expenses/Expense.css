@@ -2,17 +2,18 @@ body {
   background-color: #ffffff;
 }
 .heading-container {
-    background-color: #666262;
-    text-align: center;
-  /* font-size: 30px; */
-    color: aliceblue;
-    padding: 10px;
-    font-weight: bold;
-    font-size: 30px;
+  width: 100%;
+  background-color: #666262;
+  text-align: center;
+  color: aliceblue;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 30px;
 }
 .expenseIem-container {
   display: flex;
   background-color: #396679;
+  flex-wrap: wrap;
   justify-content: space-between;
   border: 3px solid white;
   border-radius: 8px;

@@ -1,0 +1,11 @@
+.Card{
+width: 50%;
+height: auto;
+padding: 50px;
+border: 2px solid black;
+border-radius: 15px;
+background-color: rgb(102, 120, 134);
+margin:auto;
+margin-top: 1cm;
+
+}
