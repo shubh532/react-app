@@ -20,17 +20,6 @@ body {
   margin-top: 21px;
   color: aliceblue;
 }
-.date {
-  margin: 10px;
-  padding: 10px;
-  font-weight: bold;
-  font-size: 20px;
-  color: #000000;
-  border: 2px solid white;
-  border-radius: 8px;
-  background-color: #8feed4;
-
-}
 .expense {
   margin: 10px;
   padding: 10px;

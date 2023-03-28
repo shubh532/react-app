@@ -1,7 +1,9 @@
+import Date from "./Date"
+import "./Expense.css";
 function ExpenseItem(props) {
   return (
       <div className="expenseIem-container">
-        <div className="date">{props.no}) {props.date.toDateString()}</div>
+        <Date date={props.date}></Date>
         <div className="expense">{props.title}</div>
         <div className="location">{props.location}</div>
         <div className="amount">{props.amount}</div>

@@ -1,8 +1,7 @@
-import "./My Components/Expense.css";
 import ExpenseItem from "./My Components/ExpenseItem";
+
 function App() {
-  const expense = new Array(100).fill({
-    no:1,
+  const expense = new Array(5).fill({
     date: new Date(),
     title: "Car Insurance",
     location: "Amaravati",
@@ -12,7 +11,6 @@ function App() {
     <div className="App">
       <div className="heading-container">EXPENSE TRACKER</div>
       {expense.map(item=>( <ExpenseItem
-        no={item.no++}
         date={item.date}
         title={item.title}
         location={item.location}
