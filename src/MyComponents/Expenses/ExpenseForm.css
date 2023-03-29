@@ -1,15 +1,37 @@
 .Form-container{
+    color: aliceblue;
     border: 2px solid black;
     margin: auto;
-    width: 100%;
+    width: 100vw;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     padding: 26px;
+    background-color: rgb(77, 77, 77);
     flex-wrap: wrap;
 }
+.form-title,.form-loction{
+    width: 25vw;
+}
 .form-title,.form-loction,.form-date,.form-amount,.add-btn{
-    margin: 5px;
+    font-size: 1.2rem;
+    margin: 6px;
     padding: 10px;
-    border: 2px solid black;
+    display: inline-grid;
+    /* border: 2px solid black; */
+}
+.add-btn{
+    width: 6rem;
+    font-weight: bold;
+    background-color: rgb(128, 196, 170);
+    border-radius: 8px;
+    margin-top: 28px;
+    
+}
+input{
+    height: 20px;
+    border: 2px solid rgb(6, 122, 255);
+    border-radius: 8px;
+    font-size: large;
+    padding: 10px;
 }

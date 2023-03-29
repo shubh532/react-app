@@ -2,7 +2,7 @@ body {
   background-color: #ffffff;
 }
 .heading-container {
-  width: 100%;
+  width: 100vw;
   background-color: #666262;
   text-align: center;
   color: aliceblue;
