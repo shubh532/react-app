@@ -10,9 +10,9 @@ function ExpenseItem(props) {
       <div className="expenseIem-container">
         <Date date={props.date}></Date>
         <div className="expense">{props.title}</div>
-        <div className="location">{props.location}</div>
-        <div className="amount">{val}</div>
-        <button onClick={fun} className="button">Add</button>
+        <div className="locationitem">{props.location}</div>
+        <div className="amountitem">{val}</div>
+        <button onClick={fun} className="buttonitem">Add</button>
     </div>
   );
 }

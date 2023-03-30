@@ -4,7 +4,7 @@ function Date(props){
     const month=props.date.toLocaleString('en-IN',{month:'long'});
     const year=props.date.getFullYear();
     return(
-        <div className="date">
+        <div className="datecomp">
             <div>{date}</div>
             <div>{month}</div>
             <div>{year}</div>
