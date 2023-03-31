@@ -5,7 +5,7 @@ function Date(props){
     const year=props.date.getFullYear();
     return(
         <div className="datecomp">
-            <div>{date}</div>
+            <div className="day">{date}</div>
             <div>{month}</div>
             <div>{year}</div>
         </div>
