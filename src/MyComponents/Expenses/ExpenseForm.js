@@ -24,7 +24,7 @@ function func(event){
     date:new Date(enterdate),
     title:entertitle,
     location:enterLocation,
-    Amount:enterAmount
+    amount:enterAmount
   }
   props.onSaveExpenseData(expenseData);
   setDate("")

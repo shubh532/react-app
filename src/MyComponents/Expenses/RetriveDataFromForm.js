@@ -1,13 +1,13 @@
 import React from "react";
 import Form from "./ExpenseForm";
 
-const FormData=()=>{
+const FormData=(props)=>{
     function SaveExpenseData(enteredExpenseData){
         const expenseData={
             ...enteredExpenseData,
             id:Math.random().toString()
         }
-       console.log(expenseData)
+       props.takeData(expenseData)
     }
 
     return(
