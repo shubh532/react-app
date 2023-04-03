@@ -1,0 +1,11 @@
+.noData_Msg{
+    color: aliceblue;
+}
+.One_Data_Msg{
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+.expense-list{
+    padding: 0;
+    list-style: none;
+}

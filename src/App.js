@@ -1,4 +1,4 @@
-import ExpenseItem from "./MyComponents/Expenses/ExpenseItem";
+import ExpenseList from "./MyComponents/Expenses/expenseList";
 import Card from "./MyComponents/UI/Card";
 import ExpenseFilter from "./MyComponents/Expenses/expenseFilter";
 import FormData from "./MyComponents/Expenses/RetriveDataFromForm";
@@ -16,7 +16,7 @@ function App() {
   const [oldExpense,setNewExpense]=useState(expense)
 
 
-const addExpenseToScreen=(expenseData)=>{
+  const addExpenseToScreen=(expenseData)=>{
   setNewExpense((prevExpense)=>{
     return[expenseData,...prevExpense]
   })
@@ -28,18 +28,7 @@ const addExpenseToScreen=(expenseData)=>{
     return Expense.date.getFullYear().toString()==filteredYear;
   })
 
-  let expensesByFilter=<p style={{color:"white"}}>No Data Found</p>
-  if (filteredExpens.length>0){
-    expensesByFilter=filteredExpens.map((item)=>( 
-      <ExpenseItem
-          key={item.id}
-          date={item.date}
-          title={item.title}
-          location={item.location}
-          amount={item.amount}
-        ></ExpenseItem>)
-        )
-  }
+  
 
   return (
     <div className="App">
@@ -47,7 +36,7 @@ const addExpenseToScreen=(expenseData)=>{
         <FormData takeData={addExpenseToScreen}/>
         <Card>
           <ExpenseFilter selected={filteredYear} onChangeFilter={filterChange}></ExpenseFilter>
-          {expensesByFilter}
+          <ExpenseList items={filteredExpens}></ExpenseList>
         </Card>
 
     </div>
