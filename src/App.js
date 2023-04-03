@@ -25,7 +25,7 @@ function App() {
     setFilteredYear(selectedYear)
   }
   const filteredExpens=oldExpense.filter((Expense)=>{
-    return Expense.date.getFullYear().toString()==filteredYear;
+    return Expense.date.getFullYear().toString()===filteredYear;
   })
 
   
