@@ -10,6 +10,7 @@ function ExpenseFilter(props){
             <div className="filter-container">
                 <label className="label">Filter By Year</label>
                 <select className="select" value={props.selected} onChange={DropDownChnge}> 
+                    <option value="2023">2023</option>
                     <option value="2022">2022</option>
                     <option value="2021">2021</option>
                     <option value="2020">2020</option>

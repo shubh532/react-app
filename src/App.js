@@ -12,7 +12,7 @@ const expense =[{
   amount: "2500",
 }];
 function App() {
-  const [filteredYear,setFilteredYear]=useState("2016")
+  const [filteredYear,setFilteredYear]=useState("2023")
   const [oldExpense,setNewExpense]=useState(expense)
 
 
@@ -24,21 +24,30 @@ const addExpenseToScreen=(expenseData)=>{
   const filterChange=selectedYear=>{
     setFilteredYear(selectedYear)
   }
+  const filteredExpens=oldExpense.filter((Expense)=>{
+    return Expense.date.getFullYear().toString()==filteredYear;
+  })
+
+  let expensesByFilter=<p style={{color:"white"}}>No Data Found</p>
+  if (filteredExpens.length>0){
+    expensesByFilter=filteredExpens.map((item)=>( 
+      <ExpenseItem
+          key={item.id}
+          date={item.date}
+          title={item.title}
+          location={item.location}
+          amount={item.amount}
+        ></ExpenseItem>)
+        )
+  }
+
   return (
     <div className="App">
       <div className="heading-container">EXPENSE TRACKER</div>
         <FormData takeData={addExpenseToScreen}/>
         <Card>
           <ExpenseFilter selected={filteredYear} onChangeFilter={filterChange}></ExpenseFilter>
-          {oldExpense.map((item)=>( 
-          <ExpenseItem
-              key={item.id}
-              date={item.date}
-              title={item.title}
-              location={item.location}
-              amount={item.amount}
-            ></ExpenseItem>)
-            )}
+          {expensesByFilter}
         </Card>
 
     </div>
