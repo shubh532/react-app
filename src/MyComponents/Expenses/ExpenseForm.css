@@ -1,3 +1,6 @@
+.container{
+    display: flex;
+}
 .Form-container{
     color: aliceblue;
     border: 2px solid black;
@@ -34,4 +37,29 @@ input{
     border-radius: 8px;
     font-size: large;
     padding: 10px;
+}
+.add-new-exp{
+    font-weight: bold;
+    border-radius: 12px;
+    width: 20%;
+    padding: 0.8rem;
+    margin: auto;
+    word-wrap: break-word;
+    background-color: rgb(241, 210, 241);
+}
+
+.add-btn-contain{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    /* border: 2px solid black; */
+}
+
+.cancel-btn{
+    width: 6rem;
+    font-weight: bold;
+    background-color: rgb(128, 196, 170);
+    border-radius: 8px;
+    margin-top: 28px;
 }

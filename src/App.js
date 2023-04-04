@@ -1,6 +1,7 @@
 import ExpenseList from "./MyComponents/Expenses/expenseList";
 import Card from "./MyComponents/UI/Card";
 import ExpenseFilter from "./MyComponents/Expenses/expenseFilter";
+import ExpenseChart from "./MyComponents/UI/expenseChart";
 import FormData from "./MyComponents/Expenses/RetriveDataFromForm";
 import { useState } from "react";
 // import "./App.css"
@@ -36,6 +37,7 @@ function App() {
         <FormData takeData={addExpenseToScreen}/>
         <Card>
           <ExpenseFilter selected={filteredYear} onChangeFilter={filterChange}></ExpenseFilter>
+          <ExpenseChart expenses={filteredExpens}></ExpenseChart>
           <ExpenseList items={filteredExpens}></ExpenseList>
         </Card>
 

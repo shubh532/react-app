@@ -20,8 +20,8 @@ const FormData=(props)=>{
     }
 
     return(
-        <div>
-            {!isEditing&&<button onClick={addBtnHandler}>Add New Expense</button>}
+        <div className="f-container">
+            {!isEditing&&<div className="add-btn-contain"><button className="add-new-exp" onClick={addBtnHandler}>Add New Expense</button></div>}
             {isEditing&&<Form onSaveExpenseData={SaveExpenseData} Cancel={stopEditHandler}></Form>}
         </div>
     )

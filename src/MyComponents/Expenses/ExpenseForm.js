@@ -54,7 +54,7 @@ function func(event){
       <button type="submit" className="add-btn">
         ADD
       </button>
-      <button type="button" onClick={props.Cancel}>Cancel</button>
+      <button className="cancel-btn" type="button" onClick={props.Cancel}>Cancel</button>
     </form>
   );
 }
